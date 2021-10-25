@@ -1,0 +1,2 @@
+# One-dimensional-thermal-code
+This code allows the calculations of temperature levels within a layered medium. It accounts for the effects of latent heat , as well as a heat source placed at some depth within the first layer. The implemented model is utilized for thermal calculations within an asphalt pavement system to track the frost front penetration. The thermal properties found in the parameters file represent an idealized pavement system. This code was developped as part of the Snowless project.
