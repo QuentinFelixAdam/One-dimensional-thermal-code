@@ -9,6 +9,4 @@ There is a possibility to parallelize the code with OpenMP.
 
 In order to run the code, simply place the weather data files into the same folder as the code files, open a terminal, type "make" followed by "exe".
 
-This code is based on a research paper to be published any time soon -- hopefully. Should you want to reuse that code and this paper be published, I will embed here a citation.
-
 For any question: contact me via quentin.f.adam@gmail.com
