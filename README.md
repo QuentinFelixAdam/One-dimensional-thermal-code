@@ -5,8 +5,6 @@ The code was implemented in ForTran 90 within a Linux environment (distribution 
 
 The code was verified against GeoStudio; see file "Verification against Geostudio.txt"
 
-The code was further validated against measurements; "Validation against DTU Heated Road.txt"
-
 The compiler is GNU Fortran (GCC) Version 4.8.5 20150623.
 
 There is a possibility to parallelize the code with OpenMP/MPI.
