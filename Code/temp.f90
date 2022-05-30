@@ -17,6 +17,12 @@ END IF
 
 OPEN(27,FILE='Surfacetemp.dat',POSITION='append')
 
+OPEN(51,FILE='Tdepththroughdepth.dat',STATUS='old')
+DO i = 1,Nz
+READ(51,*,END = 88) Tnew(i)
+END DO
+88 CLOSE(51)
+
 DO m = 1,2
 
 PRINT*,'-----------------------------------'
@@ -36,6 +42,10 @@ IF(((MOD(i-1,30)).EQ.0)) THEN
    END DO
    WRITE(27,*)(m-1)*(nlinescase-1)*dt + (i-1)*dt,intercept
 END IF
+
+!IF(((MOD(i-1,3)).EQ.0)) THEN
+!   WRITE(27,*) Tnew(1)
+!END IF
 
 
 ! EVALUATE CONVECTION COEFFICIENT
