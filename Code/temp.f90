@@ -10,6 +10,13 @@ CALL readpara()
 
 CALL init()
 
+OPEN(23, IOSTAT=stat, FILE='Surfacetemp.dat', STATUS='old')
+IF (stat.EQ.0) THEN
+CLOSE(23, STATUS='delete')
+END IF
+
+OPEN(27,FILE='Surfacetemp.dat',POSITION='append')
+
 DO m = 1,2
 
 PRINT*,'-----------------------------------'
