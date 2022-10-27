@@ -11,4 +11,6 @@ There is a possibility to parallelize the code with OpenMP/MPI.
 
 In order to run the code, simply place the weather data files into the same folder as the code files, open a terminal, type "make" followed by "exe".
 
+To cite this code, please refer to the following journal articles: 1) https://www.sciencedirect.com/science/article/pii/S0165232X22002002 and 2) https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29CR.1943-5495.0000289
+
 For any question: contact me via quentin.f.adam@gmail.com
